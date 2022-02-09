@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <script src="./script.js" type="module" async></script>
+</head>
+
+<body>
+  <div>
+    <input type="text" id="username">
+  </div>
+  <div>
+    <button id="get-profile-button">Find user</button>
+  </div>
+  <div id="profile-info-container">
+  </div>
+</body>
+
+<script id="profile-template" type="text/template">
+  <div><img src="{{image-src}}"></div>
+  <div>Public reposes: {{reposes-count}}</div>
+  <div>Followers: {{followers-count}}</div>
+  <div>Followings: {{followings-count}}</div>
+</script>
+
+</html>
